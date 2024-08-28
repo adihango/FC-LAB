@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Book Order</title>
+    <style>
+        .book-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Book Order</h1>
+    <div class="book-container">
+        <ul>
+            <li>
+                <h3>The Lord of the Rings: The Fellowship of the Ring</h3>
+                <img src="C:\Users\adars\Downloads\lord of rings.jpg" alt="The Lord of the Rings: The Fellowship of the Ring">
+                <p>By J.R.R. Tolkien</p>
+                <p>Quantity: <input type="number" name="quantity1" min="1" value="2"></p>
+            </li>
+            <li>
+                <h3>Harry Potter and the Philosopher's Stone</h3>
+                <img src="C:\Users\adars\Downloads\Harry Potter.jpg" alt="Harry Potter and the Philosopher's Stone">
+                <p>By J.K. Rowling</p>
+                <p>Quantity: <input type="number" name="quantity2" min="1" value="3"></p>
+            </li>
+        </ul>
+    </div>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment">
+            <option value="creditcard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+        </select><br><br>
+
+        <input type="submit" value="Order">
+    </form>
+</body>
+</html>

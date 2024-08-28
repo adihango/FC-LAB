@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Header styles */
+}
+
+nav {
+    /* Navigation styles */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 100px); /* Adjust for header and footer height */
+}
+
+.section1, .section2, .section3 {
+    flex: 1; /* Equal height sections */
+    padding: 20px;
+}

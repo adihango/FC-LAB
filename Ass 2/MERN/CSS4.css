@@ -1,0 +1,12 @@
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for readability */
+    color: white;
+    padding: 10px;
+}

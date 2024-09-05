@@ -1,45 +1,69 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
 }
 
-nav ul {
-    list-style: none;
+header h1 {
     margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
 }
 
 main {
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
-.hero {
+.watch {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+    margin: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
-.products ul {
-    list-style: none;
-    padding: 0;
+.watch img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.products ul li {
-    margin-bottom: 20px;
+.watch h2 {
+    margin: 0.5rem 0;
 }
 
-.products ul li img {
-    max-width: 100%;
+.watch p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .watch {
+        flex: 1 1 calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+    }
 }

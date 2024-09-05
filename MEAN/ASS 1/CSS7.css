@@ -4,20 +4,43 @@ table {
 }
 
 th, td {
-    border: 1px solid black;
     padding: 8px;
     text-align: center;
 }
 
-/* Apply different border styles and colors */
-table {
-    border: 2px dotted green;
-}
-
 th {
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
 }
 
-tr:nth-child(even) {
-    background-color: #f5f5f5;
+/* Define border styles and colors */
+.dotted-border {
+    border: 2px dotted #007bff; /* Blue dotted border */
+}
+
+.dashed-border {
+    border: 2px dashed #28a745; /* Green dashed border */
+}
+
+.double-border {
+    border: 2px double #dc3545; /* Red double border */
+}
+
+.solid-border {
+    border: 2px solid #000; /* Black solid border */
+}
+
+.rounded-border {
+    border-radius: 5px; /* Rounded corners */
+}
+
+.thick-border {
+    border-width: 3px; /* Thicker border */
+}
+
+.inset-border {
+    border-style: inset; /* Inset border style */
+}
+
+.outset-border {
+    border-style: outset; /* Outset border style */
 }

@@ -1,6 +1,51 @@
-<div class="image-container">
-    <img src="image.jpg" alt="Image">
-    <div class="text-overlay">
-        Text to be positioned on the top right corner
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Over Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Container for image and text */
+        .image-container {
+            position: relative; /* Establish relative positioning */
+            display: inline-block; /* Ensures the container wraps around the image */
+        }
+
+        /* Style the image */
+        .image-container img {
+            display: block;
+            max-width: 100%;
+            height: auto; /* Responsive image */
+            border-radius: 10px; /* Rounded corners for a better look */
+        }
+
+        /* Text overlay styling */
+        .top-right-text {
+            position: absolute;
+            top: 10px; /* Positioning 10px from the top */
+            right: 10px; /* Positioning 10px from the right */
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px; /* Rounded corners for the text box */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="https://assets-prd.ignimgs.com/2022/04/20/alienwarelaptop-1650471128761.jpg" alt="Gaming Laptop">
+        <div class="top-right-text">Alienware Dell Gaming Laptop</div>
     </div>
-</div>
+
+</body>
+</html>

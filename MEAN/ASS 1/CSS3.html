@@ -1,1 +1,70 @@
-<a href="https://example.com">Link</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Hyperlink</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Styling the hyperlink */
+        a {
+            text-decoration: none; /* Removing the default underline */
+            padding: 10px 20px;
+            font-size: 18px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease; /* Adding a smooth transition */
+            border-radius: 5px;
+        }
+
+        /* a. Unvisited: Red */
+        a:link {
+            color: red;
+            background-color: #ffe6e6; /* Light red background for unvisited links */
+        }
+
+        /* b. Visited: Green */
+        a:visited {
+            color: green;
+            background-color: #e6ffe6; /* Light green background for visited links */
+        }
+
+        /* c. Mouse over link: Pink */
+        a:hover {
+            color: pink;
+            background-color: #ffe6f2; /* Light pink background on hover */
+            border: 2px solid pink; /* Pink border on hover */
+        }
+
+        /* d. Selected link: Blue */
+        a:active {
+            color: blue;
+            background-color: #e6e6ff; /* Light blue background for active links */
+            border: 2px solid blue;
+        }
+
+        /* Optional additional styles for beauty */
+        .link-container {
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="link-container">
+        <p>Click the link below:</p>
+        <a href="https://www.example.com" target="_blank">Visit Example</a>
+    </div>
+
+</body>
+</html>
